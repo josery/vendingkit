@@ -43,13 +43,13 @@ Abre el archivo `.env` en tu editor:
 Reemplaza esta línea:
 
 ```bash
-ANTHROPIC_API_KEY=sk-ant-api03-ppBIesoG5otirmBVuKLeMS5RwDn-yvsDC4VaN4YzrxJDITbj5TNr2Jysheq1I4ToG-PrAmozVE8nis4-YFiXA-_pp0YgAA
+ANTHROPIC_API_KEY=sk-ant-api03-[tu-clave]
 ```
 
 Con la nueva clave que copiaste:
 
 ```bash
-ANTHROPIC_API_KEY=sk-ant-api03-[tu-nueva-clave]
+ANTHROPIC_API_KEY=sk-ant-api03-[tu-clave][tu-nueva-clave]
 ```
 
 ### Paso 6: Prueba Nuevamente

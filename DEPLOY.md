@@ -26,7 +26,7 @@ En Railway, ve a **Settings** → **Environment**
 Agrega estas variables (copia del `.env`):
 
 ```
-ANTHROPIC_API_KEY=sk-ant-api03-ppBIesoG5otirmBVuKLeMS5RwDn-yvsDC4VaN4YzrxJDITbj5TNr2Jysheq1I4ToG-PrAmozVE8nis4-YFiXA-_pp0YgAA
+ANTHROPIC_API_KEY=sk-ant-api03-[tu-clave]
 
 META_ACCESS_TOKEN=EAAMEgKMKMlABRRgirCcuisIqB8RufTtUx1OpM8KpLvsvxEbJ5ZCi4AwIDpFEaXAZBi6ZBF5oo1DBsdrH3X3jAZBbLxIJZANtgTie0stwpYwMmQxNxOjRYgh3wAY2oto3WCsuM4ZBXjlyeFKdfwGGzppzDZCeTKdS26Uqe3VZBJ4lOZBAXiFZAkOY9ZA4Y1NBNuLDvBNZBkZAh4TppnvFVDZC6XLwKyxtF9sXQrWnH70rAJWNXSVfgtv9m4s3jUYP4DQUgIvtSP3LjrzxsnepkSFBSMXMp7
 
