@@ -1,0 +1,49 @@
+# Git and version control
+.git
+.gitignore
+.github
+
+# Python cache and environments
+__pycache__
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv
+*.egg-info/
+dist/
+build/
+
+# IDE and editor files
+.vscode
+.idea
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Database files (local only)
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment files (will be set via Railway)
+.env
+.env.local
+.env.*.local
+
+# Documentation and misc
+README_*.md
+START_HERE.md
+SETUP_API_KEY.md
+*.md
+
+# Tests
+tests/
+pytest.ini
+
+# Logs
+*.log
+logs/

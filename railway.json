@@ -1,0 +1,51 @@
+{
+  "name": "VendingKit",
+  "description": "WhatsApp AI Agent for Vending Machine Management",
+  "keywords": [
+    "whatsapp",
+    "ai",
+    "chatbot",
+    "vending",
+    "fastapi",
+    "python"
+  ],
+  "repo": "",
+  "runtime": "python@3.11",
+  "buildCommand": "pip install -r requirements.txt",
+  "startCommand": "python -m uvicorn agent.main:app --host 0.0.0.0 --port $PORT",
+  "env": {
+    "PORT": {
+      "description": "Port for the application",
+      "default": "8000"
+    },
+    "HOST": {
+      "description": "Host for the application",
+      "default": "0.0.0.0"
+    },
+    "DEBUG": {
+      "description": "Debug mode",
+      "default": "False"
+    },
+    "ANTHROPIC_API_KEY": {
+      "description": "Anthropic API Key for Claude access"
+    },
+    "META_ACCESS_TOKEN": {
+      "description": "Meta WhatsApp Cloud API Access Token"
+    },
+    "META_PHONE_NUMBER_ID": {
+      "description": "Meta WhatsApp Phone Number ID"
+    },
+    "META_BUSINESS_ACCOUNT_ID": {
+      "description": "Meta Business Account ID"
+    },
+    "META_VERIFY_TOKEN": {
+      "description": "Meta Webhook Verification Token"
+    },
+    "GOOGLE_SHEETS_ID": {
+      "description": "Google Sheets ID for incident logging"
+    },
+    "GOOGLE_CALENDAR_EMAIL": {
+      "description": "Google Calendar Email for authentication"
+    }
+  }
+}

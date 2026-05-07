@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  vendingkit:
+    build: .
+    container_name: vendingkit
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      - HOST=0.0.0.0
+      - DEBUG=True
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - META_ACCESS_TOKEN=${META_ACCESS_TOKEN}
+      - META_PHONE_NUMBER_ID=${META_PHONE_NUMBER_ID}
+      - META_VERIFY_TOKEN=${META_VERIFY_TOKEN}
+      - GOOGLE_SHEETS_ID=${GOOGLE_SHEETS_ID}
+      - GOOGLE_CALENDAR_EMAIL=${GOOGLE_CALENDAR_EMAIL}
+    volumes:
+      - .:/app
+      - ./vendingkit.db:/app/vendingkit.db
+    command: python -m uvicorn agent.main:app --host 0.0.0.0 --port 8000 --reload
+    networks:
+      - vendingkit-network
+
+networks:
+  vendingkit-network:
+    driver: bridge
+
+volumes:
+  db:
+    driver: local

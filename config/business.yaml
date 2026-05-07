@@ -1,0 +1,40 @@
+# VendingKit Business Configuration
+
+business:
+  name: "VendingKit Demo"
+  owner: "Jose Vasquez"
+  email: "josery@gmail.com"
+
+machines:
+  total: 1
+  locations:
+    - name: "Máquina Demo"
+      address: "Ubicación Demo"
+      floor: "1"
+      extension: "100"
+
+agent:
+  name: "VendingKit Agent"
+  description: "Agente de WhatsApp especializado en máquinas de vending"
+  language: "es"
+  timezone: "America/Puerto_Rico"
+
+products:
+  categories:
+    - "Bebidas"
+    - "Snacks"
+    - "Comidas"
+
+support_hours:
+  start: "08:00"
+  end: "18:00"
+  days: "Monday-Friday"
+
+integrations:
+  whatsapp:
+    provider: "meta"
+    enabled: true
+  google_sheets:
+    enabled: true
+  google_calendar:
+    enabled: true
